@@ -1,7 +1,10 @@
 #include <QApplication>
 #include <QCoreApplication>
 #include <QQmlApplicationEngine>
+
 #include "user.h"
+#include "devicesettings.h"
+
 
 
 void myMessageOutput(QtMsgType type, const QMessageLogContext &context, const QString &msg)
@@ -40,8 +43,15 @@ void myMessageOutput(QtMsgType type, const QMessageLogContext &context, const QS
 
 int main(int argc, char *argv[])
 {
+
+    //init USER
     User user;
     qmlRegisterSingletonInstance("User", 1,0,"User",&user);
+
+
+    //init device for server
+    DeviceSettings devSettings;
+    qmlRegisterSingletonInstance("deviceSettings", 1, 0, "deviceSettings", &devSettings);
 
 //////////////////////////////////////////////////////
 // подключение только для того, чтобы отобразить данн

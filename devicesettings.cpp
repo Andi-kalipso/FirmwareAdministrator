@@ -1,6 +1,6 @@
 #include "devicesettings.h"
 
-deviceSettings::deviceSettings() {
+DeviceSettings::DeviceSettings() {
 
 
 
