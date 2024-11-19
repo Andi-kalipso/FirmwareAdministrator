@@ -3,7 +3,7 @@
 
 #include <QObject>
 
-class deviceSettings
+class deviceSettings : public QObject
 {
     Q_OBJECT
 public:
