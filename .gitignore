@@ -1,9 +1,10 @@
 
 #directory which need IGNore
 /build
-
+/firmwareAdmin
 
 # Applications
+*.pub
 *.app
 *.exe
 *.war
