@@ -1,0 +1,9 @@
+
+#directory which need IGNore
+/build
+
+
+# Applications
+*.app
+*.exe
+*.war
